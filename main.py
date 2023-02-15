@@ -9,8 +9,8 @@ def getDefinitionOf(obj):
         if yn:
             for definition in data[difflib.get_close_matches(obj,data.keys(),n=1)[0]]:
                 print(definition)
-            else:
-                print("We didn't understand your entry.")
+        else:
+            print("We didn't understand your entry.")
     else:
         print("Word doesn't exist. Double check and try again.")
 while True:
